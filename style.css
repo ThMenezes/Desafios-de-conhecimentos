@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2? family= Montserrat & display=swap');
+
+*{
+    margin: 0;
+    padding: 0;    
+}
+
+#titulo {
+    font-family: 'Montserrat', sans-serif;
+    color: #2f2325;
+    text-align: center;
+
+}
+
+#subtitulo {
+    font-family: 'Montserrat', sans-serif;
+    color: #2f2325;
+    text-align: center;
+}
+
+body {
+    background: #fff2e7;
+    font-family: 'Montserrat', sans-serif;
+    color: #2f2325;  
+
+}
