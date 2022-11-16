@@ -6,12 +6,14 @@
     <link rel="stylesheet" href="style.css">
     <title>Questionário</title>
 </head>
+<header> 
+    <img class="logo" src="./img/logo.png">
+</header>
 
     <body>
-
             <div>
             <h1 id="titulo">Max Point</h1>
-            <p id="subtitulo">Cadastre-se</p>
+            <p id="subtitulo">Cadastre-se!</p>
             <br>
             </div>
 
@@ -35,14 +37,20 @@
 
                 <div class="campo">
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email">
-                </div> 
+                <input type="email" name="email" id="email" required>
+                </div>
+                
+                <div class="campo">
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" id="senha" required>
+                    </div><br>
+
+                <h2>Acesse ao desafio.</h2>
+                
+                <a class="botao" href="desafio.html"> Acessar</a>
             </fieldset>              
-    
-                <h2>Acesse ao desafio!</h2>        
-                <button class="botao" type="submit" onsubmit=""> Acesse </button>
-    
-         </form>    
+            
+        </form>    
     </body>
 
 </html>
