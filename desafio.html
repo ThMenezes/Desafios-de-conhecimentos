@@ -7,102 +7,116 @@
     <title>Desafio</title>
 </head>
 <body>
-    <h1 class="titulo-quiz"> Teste seus conhecimentos!</h1><br>
-    <form>
-        <div>
+    
+    <h1 id="titulo-quiz"> Teste seus conhecimentos!</h1><br>
+
+    <section>
+        <form name="quizForm">
+            <div>
             <label class="pergunta">1- Qual dessas palavras não é uma paroxítona?</label>
-        <label>
-        <input type="radio" name="respostas" value="a"> A)- Álbum
-        </label>
-
-        <label>
-        <input type="radio" name="respostas" value="b"> B)- Felicidade
-        </label>
-
-        <label>
-        <input type="radio" name="respostas" value="c"> C)- Gratuito
-        </label>
-
-        <label>
-            <input type="radio" name="respostas" value="d"> D)- Inglês
+            <label>
+            <input type="radio" name="questao1" value="a" id="a"> a. Álbum 
             </label>
-        </div><br>
 
-        <div>
+            <label>
+            <input type="radio" name="questao1" value="b" id="b"> b. Felicidade
+            </label>
+
+            <label>
+            <input type="radio" name="questao1" value="c" id="c"> c. Gratuito
+            </label>
+
+            <label>
+            <input type="radio" name="questao1" value="d" id="d"> d. Inglês 
+            </label>
+            </div><br>
+
+            <div>
             <label class="pergunta">2- Seguindo a ordem 2,12,16,17,18,19. Qual o próximo número?</label>
-        <label>
-        <input type="radio" name="respostas" value="a"> A)- 20
-        </label>
-
-        <label>
-        <input type="radio" name="respostas" value="b"> B)- 200
-        </label>
-
-        <label>
-        <input type="radio" name="respostas" value="c"> C)- 350
-        </label>
-
-        <label>
-            <input type="radio" name="respostas" value="d"> D)- 198
+            <label>
+            <input type="radio" name="questao2" value="a" id="a"> a. 20
             </label>
-        </div><br>
-        <div>
+
+            <label>
+            <input type="radio" name="questao2" value="b" id="b"> b. 200
+            </label>
+
+            <label>
+            <input type="radio" name="questao2" value="c" id="c"> c. 350
+            </label>
+
+            <label>
+            <input type="radio" name="questao2" value="d" id="d"> d. 198
+            </label>
+            </div><br>
+
+            <div>
             <label class="pergunta">3- Todos os computadores devem ter:</label>
-        <label>
-        <input type="radio" name="respostas" value="a"> A)- Programa de texto
-        </label>
-
-        <label>
-        <input type="radio" name="respostas" value="b"> B)- Programa de vírus
-        </label>
-
-        <label>
-        <input type="radio" name="respostas" value="c"> C)- Sistema Operacional
-        </label>
-
-        <label>
-            <input type="radio" name="respostas" value="d"> D)- Nenhuma das alternativas
+            <label>
+            <input type="radio" name="questao3" value="a" id="a"> a. Programa de texto
             </label>
-        </div><br>
-        <div>
+
+            <label>
+            <input type="radio" name="questao3" value="b" id="b"> b. Programa de vírus
+            </label>
+
+            <label>
+            <input type="radio" name="questao3" value="c" id="c"> c. Sistema Operacional
+            </label>
+
+            <label>
+            <input type="radio" name="questao3" value="d" id="d"> d. Nenhuma das alternativas
+            </label>
+            </div><br>
+
+            <div>
             <label class="pergunta">4- O que a palavra <u>legend</u> significa em português?</label>
             <label>
-            <input type="radio" name="respostas" value="a"> A)- Lenda
+            <input type="radio" name="questao4" value="a" id="a"> a. Lenda
             </label>
     
             <label>
-            <input type="radio" name="respostas" value="b"> B)- Legenda
+            <input type="radio" name="questao4" value="b" id="b"> b. Legenda
             </label>
     
             <label>
-            <input type="radio" name="respostas" value="c"> C)- Lição
+            <input type="radio" name="questao4" value="c" id="c">c. Lição
             </label>
     
             <label>
-                <input type="radio" name="respostas" value="d"> D)- Legendário
-                </label>
+            <input type="radio" name="questao4" value="d" id="d">d. Legendário
+            </label>
             </div><br>
+
             <div>
-                <label class="pergunta">5- Quanto tempo a luz do Sol demora para chegar à Terra?</label>
-                <label>
-                <input type="radio" name="respostas" value="a"> A)- 12 minutos
-                </label>
+            <label class="pergunta">5- Quanto tempo a luz do Sol demora para chegar à Terra?</label>
+            <label>
+            <input type="radio" name="questao5" value="a" id="a"> a. 12 minutos
+            </label>
         
-                <label>
-                <input type="radio" name="respostas" value="b"> B)- 8 minutos
-                </label>
+            <label>
+            <input type="radio" name="questao5" value="b" id="b"> b. 8 minutos
+            </label>
         
-                <label>
-                <input type="radio" name="respostas" value="c"> C)- 12 horas
-                </label>
+            <label>
+            <input type="radio" name="questao5" value="c" id="c"> c. 12 horas
+            </label>
         
-                <label>
-                    <input type="radio" name="respostas" value="d"> D)- 12 segundos
-                    </label>
+            <label>
+            <input type="radio" name="questao5" value="d" id="d"> d. 12 segundos
+            </label>
             </div>
 
-            <input class="botao" type="submit" name="enviar" value="Enviar"><br>
+            <input class="botao" type="button" onclick="resultado()" value="Resultado">
 
-    </form> 
+            <script src="main.js"></script>         
+
+        </form>
+    </section>
+    <section>
+        <div id="resultado"></div>
+            <input type="button" onclick="location.reload()" id="reload" value="Refazer Teste">
+    </section> 
 </body>
+
 </html>

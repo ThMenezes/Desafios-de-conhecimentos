@@ -12,7 +12,7 @@ body {
     color: #2f2f2f;
 }
 
-.titulo-quiz {
+#titulo-quiz {
     font-family: 'Montserrat', sans-serif;
     color: #2f2325;
     text-align: center;
@@ -55,4 +55,23 @@ label {
 .botao:hover {
 transform: scale(1.1);
 background: #CCBBFF
+}
+
+#resultado {
+    text-align: center;
+    font-family:'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#reload {
+    display: none;
+    background: #594245;
+    color: #ffffff;
+    padding: 0.2em 0.6em;
+    border-radius: 4px;
+    margin-top: 70px;
+    margin-left: 600px;
+    cursor: pointer;
+    transition: 2s all;
 }
