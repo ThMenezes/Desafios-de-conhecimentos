@@ -18,6 +18,33 @@ formulario.addEventListener("submit", (evento) => {
         return;
     }
 
+    if(inputEmail.value === "" || !isEmailValidacao(inputEmail.value)) {
+        alert('Por favor, preencha seu email.');
+        return;
+    }
+
+    if(!validacaoSenha(inputSenha.value, 8)) {
+        alert('A senha precisa ser no mínimo 8 dígitos.');
+        return;
+    }
+
     formulario.submit();
 
 });
+
+function isEmailValidacao(email) {
+    const emailRegex = new RegExp (
+        /^[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]{2,}$/
+    );
+    if (emailRegex.test(email)) {
+        return true
+    }
+    return false;
+}
+
+function validacaoSenha(senha, minDigitos) {
+    if(senha.length >= minDigitos) { // 8 dígitos
+        return true
+    }
+    return false
+}
