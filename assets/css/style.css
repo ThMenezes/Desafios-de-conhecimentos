@@ -12,7 +12,7 @@
 }
 
 body {
-    background-image: url(/assets/img/quiz.jpg);
+    background-image: url(../img/quiz.jpg);
     background-size: cover;
     font-family: 'Montserrat', sans-serif;
  }
