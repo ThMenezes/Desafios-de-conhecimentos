@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="desafio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/desafio.css">
     <title>Desafio</title>
 </head>
 <body>
@@ -84,7 +87,7 @@
             </label>
     
             <label>
-            <input type="radio" name="questao4" value="d" id="d">d. Legendário
+            <input type="radio" name="questao4" value="d" id="d"> d. Legendário
             </label>
             </div><br>
 
@@ -105,18 +108,21 @@
             <label>
             <input type="radio" name="questao5" value="d" id="d"> d. 12 segundos
             </label>
-            </div>
+            </div> 
 
             <input class="botao" type="button" onclick="resultado()" value="Resultado">
-
-            <script src="main.js"></script>         
-
-        </form>
+                                       
+        </form>        
     </section>
+
+    <footer>&copy; <a href="https://github.com/ThMenezes" target="_blank"> Thialla Menezes</a></footer>
+
     <section>
         <div id="resultado"></div>
-            <input type="button" onclick="location.reload()" id="reload" value="Refazer Teste">
+            <input class="botao" type="button" onclick="location.reload()" id="reload" value="Refazer Teste">
     </section> 
+
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
