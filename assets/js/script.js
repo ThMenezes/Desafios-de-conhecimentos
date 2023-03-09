@@ -5,8 +5,8 @@ const inputIdade = document.querySelector('#idade')
 const inputEmail = document.querySelector('#email')
 const inputSenha = document.querySelector('#senha')
 
-formulario.addEventListener("click", (evento) => {
-    evento.preventDefault();
+    formulario.addEventListener("submit", (evento) => {
+        evento.preventDefault();
 
     if(inputNome.value === "") {
         alert('Por favor, preencha seu nome.');
@@ -32,9 +32,9 @@ formulario.addEventListener("click", (evento) => {
         alert('A senha precisa ser no mínimo 8 dígitos.');
         return;
     }   
-
-    formulario.submit();
-
+    
+    window.location.replace("desafio.html");
+    
 });
 
 function isEmailValidacao(email) {
