@@ -33,10 +33,14 @@ function resultado(){
 	}
 	if(q5 == respostas[4]){
 		pontuacao++;
-	}
+	}	
 
 	document.getElementById("reload").style.display="block"
+	document.getElementById("sair").style.display="block"
 	document.getElementsByName("quizForm")[0].style.display="none"
-	document.getElementById("resultado").innerHTML = `Você marcou ${pontuacao} de ${total}! `;
-						
+	document.getElementById("resultado").innerHTML = `Você marcou ${pontuacao} de ${total} questões! `;						
+}
+
+function sair(){
+	window.location.replace("index.html");
 }

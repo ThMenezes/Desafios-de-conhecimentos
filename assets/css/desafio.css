@@ -92,6 +92,18 @@ footer a {
     cursor: pointer;    
 }
 
+#sair {
+    display: none;
+    background: var(--button-color);
+    color: var(--button-text-color);
+    font-size: 1.2rem;    
+    border: none;
+    border-radius: 5px;
+    padding: 10px;    
+    margin: 100px auto;     
+    cursor: pointer;  
+}
+
 @media (max-width: 600px) {   
 
     form {
